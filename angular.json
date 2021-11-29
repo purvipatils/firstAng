@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "testAng"
+    }
+  },
+  "defaultProject": "testAng",
+  "cli": {
+    "analytics": "399f0adc-ec39-44bc-8838-b7f9da15e341"
+  }
 }
