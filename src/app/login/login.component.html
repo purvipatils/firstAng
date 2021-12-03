@@ -1,4 +1,4 @@
-<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+<!-- <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
     <input name="first" ngModel required #first="ngModel">
     <input name="last" ngModel>
     <button>Submit</button>
@@ -7,4 +7,37 @@
   <p>First name value: {{ first.value }}</p>
   <p>First name valid: {{ first.valid }}</p>
   <p>Form value: {{ f.value | json }}</p>
-  <p>Form valid: {{ f.valid }}</p>
+  <p>Form valid: {{ f.valid }}</p> -->
+
+
+
+<form>
+
+    <div class="outerbox">
+        <h2>ACCOUNT LOGIN </h2>
+
+        <div>
+            <label> USERNAME</label>
+            <input type="text" name="uname" id="uname" placeholder="Username">
+        </div>
+
+        <div>
+            <label>PASSWORD</label>
+            <input type="Password" name="pass" id="pass" placeholder="password">
+        </div>
+
+        <div class="wrapper-pane">
+            <div class="left-pane">
+                <input type="checkbox" id="check">
+                <span>Remember me</span>
+            </div>
+            <div class="right-pane">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="loginbtn">Login</button>
+        </div>
+
+    </div>
+</form>
