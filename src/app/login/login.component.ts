@@ -9,6 +9,8 @@ import {NgForm} from '@angular/forms';
 })
 export class LoginComponent {
   constructor(private router: Router){}
+  
+  
   onSubmit(f: NgForm) {
     console.log(f.value);  // { first: '', last: '' }
     console.log(f.valid);  // false

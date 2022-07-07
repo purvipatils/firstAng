@@ -10,20 +10,19 @@
   <p>Form valid: {{ f.valid }}</p> -->
 
 
-
-<form>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
 
     <div class="outerbox">
         <h2>ACCOUNT LOGIN </h2>
 
         <div>
             <label> USERNAME</label>
-            <input type="text" name="uname" id="uname" placeholder="Username">
+            <input type="text" name="username" id="username" ngModel required #username="ngModel" placeholder="Enter Username">
         </div>
 
         <div>
             <label>PASSWORD</label>
-            <input type="Password" name="pass" id="pass" placeholder="password">
+            <input type="password" name="password" id="password" ngModel placeholder="Enter Password">
         </div>
 
         <div class="wrapper-pane">
@@ -36,7 +35,7 @@
             </div>
         </div>
         <div>
-            <button type="button" class="loginbtn">Login</button>
+            <button type="submit" class="loginbtn">Login</button>
         </div>
 
     </div>

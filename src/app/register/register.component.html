@@ -1,0 +1,20 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+
+    <div class="outerbox">
+        <h2>ACCOUNT REGISTER </h2>
+
+        <div>
+            <label> USERNAME</label>
+            <input type="text" name="username" id="username" ngModel required #username="ngModel" placeholder="Enter Username">
+        </div>
+
+        <div>
+            <label>PASSWORD</label>
+            <input type="password" name="password" id="password" ngModel placeholder="Enter Password">
+        </div>
+        <div>
+            <button type="submit" class="loginbtn">Register</button>
+        </div>
+
+    </div>
+</form>
